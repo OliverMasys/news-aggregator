@@ -1,3 +1,13 @@
+/*
+ * JavaScript Boilerplate for News Aggregator Project
+ * 
+ * This JavaScript file is part of the Web APIs assignment.
+ * Your task is to complete the functions with appropriate module pattern, observer pattern, singleton pattern.
+ * 
+ * Follow the TODO prompts and complete each section to ensure the
+ * News Aggregator App works as expected.
+ */
+
 // Singleton Pattern: ConfigManager
 const ConfigManager = (function() {
     let instance;
