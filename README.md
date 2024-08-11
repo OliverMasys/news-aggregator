@@ -5,8 +5,8 @@ Project: News Aggregator
 
 Description
 
-    Build a news aggregator that fetches and displays news articles from multiple sources. Implement the module pattern to organize the code, use the observer pattern for real-time updates, and apply the singleton pattern to manage a shared state.
-    
+Build a news aggregator that fetches and displays news articles from multiple sources. Implement the module pattern to organize the code, use the observer pattern for real-time updates, and apply the singleton pattern to manage a shared state.
+
 Concepts
 
-    Module pattern, observer pattern, singleton pattern 
+Module pattern, observer pattern, singleton pattern 
