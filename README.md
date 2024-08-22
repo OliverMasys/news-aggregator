@@ -1,4 +1,4 @@
-# Unit 7: JavaScript Design Patterns
+# JavaScript Design Patterns
 
 Design patterns like the module, observer, and singleton patterns are introduced. These patterns help in organizing code efficiently, leveraging the knowledge from previous units about functions and asynchronous operations.
 
