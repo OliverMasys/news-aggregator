@@ -39,14 +39,19 @@ const ConfigManager = (function() {
 // Module Pattern: NewsFetcher
 const NewsFetcher = (function () {
     // TODO: Create config object with getInstance of ConfigManager
-
+    const config = ConfigManager.getInstance();
     
-    function fetchArticles() {
+    async function fetchArticles() {
         // TODO: return fetch data adjusted for only articles
-
-
-
-    }
+        try {
+            const response = await fetch(`${config.apiUrl}?country=us&apiKey=${config.apiKey}`);
+            const data = await response.json();
+            return data.articles;
+        } catch (error) {
+            console.error("Error", error);
+            return[];
+        }
+     }
 
     return {
         getArticles: fetchArticles
