@@ -22,9 +22,14 @@ const ConfigManager = (function() {
 
     // TODO: Return getInstance function
 
-
-
-
+    return {
+        getInstance: function() {
+            if (!instance) {
+                instance = createInstance();
+            }
+            return instance;
+        }
+    }
 
 
 
