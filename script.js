@@ -66,7 +66,15 @@ function NewsFeed() {
 
 // TODO: Create NewsFeed prototype
 
+NewsFeed.prototype = {
+    subscrible: function(observer) {
+        this.observers.push(observer);
+    },
 
+    notify: function(article) {
+        this.observers.forEach(observer => observer(article));
+    },
+}
 
 
 
