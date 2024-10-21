@@ -82,18 +82,6 @@ NewsFeed.prototype = {
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Instantiate the NewsFeed
 const newsFeed = new NewsFeed();
 
