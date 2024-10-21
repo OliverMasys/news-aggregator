@@ -113,7 +113,8 @@ function updateArticleList(article) {
 
 // TODO: Subscribe Observers
 
-
+newsFeed.subscribe(updateHeadline);
+newsFeed.subscribe(updateArticleList);
 
 // Fetch and display articles
 NewsFetcher.getArticles().then(articles => {
