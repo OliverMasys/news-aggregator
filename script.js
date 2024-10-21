@@ -74,6 +74,11 @@ NewsFeed.prototype = {
     notify: function(article) {
         this.observers.forEach(observer => observer(article));
     },
+
+    addArticle: function(article) {
+        this.articles.push(article);
+        this.notify(article);
+    }
 }
 
 
