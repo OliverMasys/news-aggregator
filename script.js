@@ -16,7 +16,7 @@ const ConfigManager = (function() {
         return {
             theme: 'dark',
             apiUrl: 'https://newsapi.org/v2/top-headlines',
-            apiKey: 'your_api_key_here' // TODO: Replace with your NewsAPI key
+            apiKey: '322d76e6eb864756b7444eeb00259ac1' // TODO: Replace with your NewsAPI key
         };
     }
 
@@ -29,7 +29,7 @@ const ConfigManager = (function() {
             }
             return instance;
         }
-    }
+    };
 
 
 
@@ -67,7 +67,7 @@ function NewsFeed() {
 // TODO: Create NewsFeed prototype
 
 NewsFeed.prototype = {
-    subscrible: function(observer) {
+    subscribe: function(observer) {
         this.observers.push(observer);
     },
 
@@ -79,7 +79,7 @@ NewsFeed.prototype = {
         this.articles.push(article);
         this.notify(article);
     }
-}
+};
 
 
 
